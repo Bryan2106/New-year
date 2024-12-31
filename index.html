@@ -52,7 +52,7 @@
 			let ultimoHORA = 23 -  horaATUAL;
 			let ultimoMIN = 59 - minATUAL;
 			let ultimoSEG = 59 - segATUAL;
-			if(difANO === 0 && ultimoDIA <= 0 && ultimoHORA <= 0 && ultimoMIN <= 0 && ultimoSEG <= 0){
+			if(difANO === 0){
 				AnoNovo();
 			}else{
 				RES.textContent = `${ultimoDIA}:${ultimoHORA}:${ultimoMIN}:${ultimoSEG}`;
@@ -60,9 +60,6 @@
 			function AnoNovo(){
 				RES.textContent = 'Feliz Ano Novo';
 				ano.textContent = 'Ano atual: 2025';
-				document.body.style.backgroundImage = "url(https://static.vecteezy.com/ti/fotos-gratis/t1/50927873-2025-novo-ano-celebracao-bandeira-com-fogos-de-artificio-foto.jpeg)";
-				document.body.style.backgroundSize = "Cover";
-				document.body.style.backgroundRepeat = "no-repeat";
 			}
 
 
